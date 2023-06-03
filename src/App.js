@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { Create } from "./pages/Create";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import { blue, purple } from "@mui/material/colors";
+import { Layout } from "./components/Layout";
 
 const theme = createTheme({
   palette: {
@@ -24,10 +25,12 @@ function App() {
     <div className="App">
       <ThemeProvider theme={theme}>
         <Router>
-          <Routes>
-            <Route exact path="/" element={<Home />} />
-            <Route path="/create" element={<Create />} />
-          </Routes>
+          <Layout>
+            <Routes>
+              <Route exact path="/" element={<Home />} />
+              <Route path="/create" element={<Create />} />
+            </Routes>
+          </Layout>
         </Router>
       </ThemeProvider>
     </div>

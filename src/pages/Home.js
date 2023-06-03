@@ -1,5 +1,6 @@
-import { Container, Grid, Paper } from "@mui/material";
+import { Container, Grid } from "@mui/material";
 import { useEffect, useState } from "react";
+import { NoteCard } from "../components/NoteCard";
 
 export const Home = () => {
   const [notes, setNotes] = useState([]);
@@ -10,28 +11,22 @@ export const Home = () => {
       .then((data) => setNotes(data));
   }, []);
 
+  const handleDelete = async (id) => {
+    await fetch("http://localhost:8000/notes/" + id, {
+      method: "DELETE",
+    });
+
+    const newNotes = notes.filter((item) => item.id != id);
+    setNotes(newNotes);
+  };
+
   return (
     <Container>
-      {/* <Grid container>
-        <Grid item xs={12} sm={6} md={3}>
-          <Paper>1</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Paper>2</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Paper>3</Paper>
-        </Grid>
-        <Grid item xs={12} sm={6} md={3}>
-          <Paper>4</Paper>
-        </Grid>
-      </Grid> */}
-
-      <Grid container>
+      <Grid container spacing={3}>
         {notes &&
           notes.map((item) => (
             <Grid item key={item.id} xs={12} sm={6} md={3}>
-              <Paper>{item.title}</Paper>
+              <NoteCard note={item} handleDelete={handleDelete} />
             </Grid>
           ))}
       </Grid>
