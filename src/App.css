@@ -3,3 +3,8 @@
 body {
   margin: 0;
 }
+
+.field {
+  margin: 20 0;
+  display: block;
+}
