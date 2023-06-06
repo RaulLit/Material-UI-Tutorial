@@ -1,11 +1,14 @@
 import { AddCircleOutlineOutlined, SubjectOutlined } from "@mui/icons-material";
 import {
+  AppBar,
+  Container,
   Drawer,
   List,
   ListItem,
   ListItemButton,
   ListItemIcon,
   ListItemText,
+  Toolbar,
   Typography,
 } from "@mui/material";
 import { useLocation, useNavigate } from "react-router-dom";
@@ -39,6 +42,20 @@ export const Layout = ({ children }) => {
         display: "flex",
       }}
     >
+      <AppBar
+        sx={{
+          width: `calc(100% - ${drawerWidth}px)`,
+          background: (theme) => theme.palette.background.default,
+          color: (theme) => theme.palette.text.primary,
+        }}
+        elevation={0}
+      >
+        <Toolbar>
+          <Typography sx={{ flexGrow: 1 }}>Welcome to notes keeping</Typography>
+          <Typography>Aditya</Typography>
+        </Toolbar>
+      </AppBar>
+
       <Drawer
         anchor="left"
         sx={{
@@ -80,7 +97,7 @@ export const Layout = ({ children }) => {
           ))}
         </List>
       </Drawer>
-      <div style={{ flexGrow: 1 }}>{children}</div>
+      <div style={{ flexGrow: 1, marginTop: "4rem" }}>{children}</div>
     </div>
   );
 };
