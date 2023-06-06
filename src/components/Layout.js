@@ -1,6 +1,7 @@
 import { AddCircleOutlineOutlined, SubjectOutlined } from "@mui/icons-material";
 import {
   AppBar,
+  Avatar,
   Container,
   Drawer,
   List,
@@ -53,6 +54,7 @@ export const Layout = ({ children }) => {
         <Toolbar>
           <Typography sx={{ flexGrow: 1 }}>Welcome to notes keeping</Typography>
           <Typography>Aditya</Typography>
+          <Avatar src="" sx={{ marginLeft: (theme) => theme.spacing(2) }} />
         </Toolbar>
       </AppBar>
 
