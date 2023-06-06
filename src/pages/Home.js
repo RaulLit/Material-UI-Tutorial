@@ -21,11 +21,11 @@ export const Home = () => {
   };
 
   return (
-    <Container>
+    <Container sx={{ padding: (theme) => theme.spacing(3) }}>
       <Grid container spacing={3}>
         {notes &&
           notes.map((item) => (
-            <Grid item key={item.id} xs={12} sm={6} md={3}>
+            <Grid item key={item.id} xs={12} sm={6} md={4}>
               <NoteCard note={item} handleDelete={handleDelete} />
             </Grid>
           ))}

@@ -45,7 +45,7 @@ export const Create = () => {
   };
 
   return (
-    <Container>
+    <Container sx={{ padding: (theme) => theme.spacing(3) }}>
       <Typography
         variant="h6"
         component="h2"

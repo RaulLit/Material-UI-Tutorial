@@ -8,3 +8,7 @@ body {
   margin: 20 0;
   display: block;
 }
+
+.active {
+  background: #f4f4f4;
+}
