@@ -4,15 +4,15 @@ Welcome to the Material-UI Tutorial repository! This tutorial is designed to hel
 
 ## Branches
 
-- [branch-1](https://github.com/raullit/react-tutorial/tree/main): Covers Typography
-- [branch-2](https://github.com/raullit/react-tutorial/tree/button-icon): Covers buttons and icons
-- [branch-3](https://github.com/raullit/react-tutorial/tree/customTheme): Covers custom themes
-- [branch-4](https://github.com/raullit/react-tutorial/tree/radio-jsonServer-gridSystem): Covers Radio, JSON Server, Grid System
-- [branch-5](https://github.com/raullit/react-tutorial/tree/card-components): Covers Card Components
-- [branch-6](https://github.com/raullit/react-tutorial/tree/permanentDrawer): Covers Permanent Drawer
-- [branch-7](https://github.com/raullit/react-tutorial/tree/appBar): Covers App Bar
-- [branch-8](https://github.com/raullit/react-tutorial/tree/avatar): Covers Avatars
-- [branch-9](https://github.com/raullit/react-tutorial/tree/Masonry): Covers Masonry Layout
+- [branch-1](https://github.com/raullit/Material-UI-Tutorial/tree/main): Covers Typography
+- [branch-2](https://github.com/raullit/Material-UI-Tutorial/tree/button-icon): Covers buttons and icons
+- [branch-3](https://github.com/raullit/Material-UI-Tutorial/tree/customTheme): Covers custom themes
+- [branch-4](https://github.com/raullit/Material-UI-Tutorial/tree/radio-jsonServer-gridSystem): Covers Radio, JSON Server, Grid System
+- [branch-5](https://github.com/raullit/Material-UI-Tutorial/tree/card-components): Covers Card Components
+- [branch-6](https://github.com/raullit/Material-UI-Tutorial/tree/permanentDrawer): Covers Permanent Drawer
+- [branch-7](https://github.com/raullit/Material-UI-Tutorial/tree/appBar): Covers App Bar
+- [branch-8](https://github.com/raullit/Material-UI-Tutorial/tree/avatar): Covers Avatars
+- [branch-9](https://github.com/raullit/Material-UI-Tutorial/tree/Masonry): Covers Masonry Layout
 
 ## Instructions
 
